@@ -4,14 +4,15 @@
     android:id="@+id/taskRow"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_gravity="fill_horizontal"
+    android:layout_gravity="fill"
     android:background="#000000"
     android:backgroundTint="#000000"
-    android:foregroundGravity="fill_horizontal"
-    android:gravity="fill_horizontal"
+    android:clickable="true"
+    android:foregroundGravity="fill"
+    android:gravity="fill"
     android:orientation="horizontal"
     android:padding="10dp"
-    app:layout_anchorGravity="fill_horizontal">
+    app:layout_anchorGravity="fill">
 
     <LinearLayout
         android:id="@+id/col"
@@ -35,6 +36,16 @@
             android:layout_height="wrap_content"
             android:text="TextView"
             android:textColor="#ABABAB" />
+
     </LinearLayout>
+
+    <Button
+        android:id="@+id/removeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:background="@color/black"
+        android:text="X"
+        android:textColor="#F6F6F6" />
 
 </LinearLayout>
